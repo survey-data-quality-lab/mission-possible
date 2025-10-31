@@ -12,7 +12,7 @@ This repository accompanies the paper **“Mission Possible: Data Quality in Onl
 - **Data and analysis code**  
   Scripts we used to clean and analyze the data, and example datasets when we can share them. See [`paper/data/`](paper/data/) (will be populated asap).
 
-- **Qualtrics / tracking scripts**  
+- **Tracking scripts for Qualtrics**  
   JavaScript snippets used in the survey to track behavior, keystrokes, or page activity. See [`trackers/`](trackers/) and the individual subfolders.
 
 - **Video attention question**  
