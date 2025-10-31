@@ -1,6 +1,6 @@
 # Implementation Instructions
 
-1. Copy code from **Figure D.1** into the Qualtrics survey header under HTML view:  
+1. Copy code into the Qualtrics survey header under HTML view:  
    *(Survey → Look and Feel → Header → Source)*
 
 2. Create two embedded data fields named `tracking_json` and `page` in the **Survey Flow**, before the first survey block.  
