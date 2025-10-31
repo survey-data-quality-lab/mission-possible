@@ -1,0 +1,32 @@
+<script type="text/javascript">
+(function() {
+  Qualtrics.SurveyEngine.addOnload(function() {
+    // Run ONLY on page 1
+    var page = Qualtrics.SurveyEngine.getEmbeddedData("page");
+    if (page !== "1") { return; }
+
+
+    // Reuse a single global promise so the library isn't imported multiple times
+    window.fpPromise = window.fpPromise || import('https://fpjscdn.net/v3/88WyjPGsG3BbHX6KBZAY')
+      .then(function(FingerprintJS) { return FingerprintJS.load(); });
+
+
+    window.fpPromise
+      .then(function(fp) { return fp.get(); })
+      .then(function(result) {
+        var visitorId = result.visitorId;
+        var requestId = result.requestId;
+        console.log('visitorId:', visitorId, 'requestId:', requestId);
+
+
+        Qualtrics.SurveyEngine.setEmbeddedData('visitorId', visitorId);
+        Qualtrics.SurveyEngine.setEmbeddedData('requestId', requestId);
+      })
+      .catch(function(err) {
+        console.error('FingerprintJS error:', err);
+        // Optional: store the error for debugging later
+        Qualtrics.SurveyEngine.setEmbeddedData('fp_error', String(err));
+      });
+  });
+})();
+</script>
