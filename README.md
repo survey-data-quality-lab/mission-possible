@@ -5,9 +5,6 @@ This repository accompanies the paper **“Mission Possible: Data Quality in Onl
 
 ## What’s inside
 
-- **Video attention question**  
-  Code to generate your own version of the video-based attention check, plus example outputs. See [`attention-video/`](attention-video/).
-
 - **Paper / documentation**  
   The working paper (PDF) and supporting notes. See [`docs/`](docs/).  
   > If GitHub can’t preview the PDF, click **Download** to view it locally.
@@ -17,6 +14,13 @@ This repository accompanies the paper **“Mission Possible: Data Quality in Onl
 
 - **Qualtrics / tracking scripts**  
   JavaScript snippets used in the survey to track behavior, keystrokes, or page activity. See [`trackers/`](trackers/) and the individual subfolders.
+
+- **Video attention question**  
+  Code to generate your own version of the video-based attention check, plus example outputs. See [`attention-video/`](attention-video/).
+  
+- **Prompts**  
+  The **simple** and **complex** agent prompts used in the paper. See [`prompts/`](prompts/).
+
 
 ## Using this repository
 
