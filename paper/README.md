@@ -1,6 +1,6 @@
 # Working Paper
 
-- Here you can find:
+Here you can find:
   1. Working paper
   2. Data [`/data/`](../paper/data/)
   3. Data analysis scripts [`/data/analysis/`](../paper/data/analysis/)
