@@ -1,3 +1,3 @@
 # Trackers
 
-This folder provides  **browser / keylog / fingerprint tracker** code referenced in the appendix of the paper.
+This folder provides  **general / keylog / fingerprint tracker** code referenced in the appendix of the paper.
