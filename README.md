@@ -6,7 +6,7 @@ This repository accompanies the paper **“Mission Possible: Data Quality in Onl
 ## What’s inside
 
 - **Paper**  
-  The working paper (PDF). See [`docs/`](docs/).  
+  The working paper (PDF). See [`paper/`](paper/).  
   > If GitHub can’t preview the PDF, click **Download** to view it locally.
 
 - **Data and analysis code**  
