@@ -50,7 +50,7 @@ pip install pillow imageio imageio-ffmpeg numpy
 python flicker.py
 ```
 
-**Convert MP4 to GIF with preserved timing:**
+**Convert MP4 to GIF (optional):**
 
 ```bash
 python mp4ToGif.py va.mp4 va.gif
@@ -80,7 +80,7 @@ pip install pillow imageio imageio-ffmpeg numpy
 python .\flicker.py
 ```
 
-**Convert MP4 to GIF with preserved timing:**
+**Convert MP4 to GIF (optional):**
 
 ```powershell
 python .\mp4ToGif.py va.mp4 va.gif
