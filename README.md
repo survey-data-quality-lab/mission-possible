@@ -10,7 +10,7 @@ This repository accompanies the paper **“Mission Possible: Data Quality in Onl
   > If GitHub can’t preview the PDF, click **Download** to view it locally.
 
 - **Data and analysis code**  
-  Scripts we used to clean and analyze the data, and example datasets when we can share them. See [`data/`](data/) (will be populated it asap).
+  Scripts we used to clean and analyze the data, and example datasets when we can share them. See [`paper/data/`](paper/data/) (will be populated it asap).
 
 - **Qualtrics / tracking scripts**  
   JavaScript snippets used in the survey to track behavior, keystrokes, or page activity. See [`trackers/`](trackers/) and the individual subfolders.
