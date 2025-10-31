@@ -10,16 +10,17 @@ This repository accompanies the paper **“Mission Possible: Data Quality in Onl
   > If GitHub can’t preview the PDF, click **Download** to view it locally.
 
 - **Data and analysis code**  
-  Scripts we used to clean and analyze the data, and example datasets when we can share them. See [`paper/data/`](paper/data/) (will be populated asap).
+  Scripts we used to clean and analyze the data, and example datasets when we can share them. See [`paper/data/`](paper/data/).
 
 - **Tracking scripts for Qualtrics**  
-  JavaScript snippets used in the survey to track behavior, keystrokes, or page activity. See [`trackers/`](trackers/) and the individual subfolders.
+  JavaScript snippets used in the survey to track behavior, keystrokes, and digital fingerprint. See [`trackers/`](trackers/) and the individual subfolders.
 
 - **Video attention question**  
   Code to generate your own version of the video-based attention check, plus example outputs. See [`attention-video/`](attention-video/).
   
 - **Prompts**  
-  The **simple** and **complex** agent prompts used in the paper. See [`prompts/`](prompts/).
+  The **simple** and **complex** agent prompts used in the paper, plus sample agent video-behavior file. See [`prompts/`](prompts/).
+
 
 
 ## Using this repository
