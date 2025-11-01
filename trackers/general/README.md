@@ -11,7 +11,7 @@
 ## Notes on Implementation
 
 - There is a limit to the size of embedded data fields in Qualtrics.  
-  Thus, the general tracker code in **Figure D.1** only works reliably for short to medium-length surveys like ours (10 pages).
+  Thus, the general tracker code only works reliably for short to medium-length surveys like ours (10 pages).
 
 - For much longer surveys, one would need to modify the code to store data for sets of pages separately in different embedded data fields (e.g., `tracking_json_1`, `tracking_json_2`, etc).
 
