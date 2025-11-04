@@ -5,11 +5,9 @@
     var page = Qualtrics.SurveyEngine.getEmbeddedData("page");
     if (page !== "1") { return; }
 
-
     // Reuse a single global promise so the library isn't imported multiple times
-    window.fpPromise = window.fpPromise || import('https://fpjscdn.net/v3/<place your API key here>')
+    window.fpPromise = window.fpPromise || import('https://fpjscdn.net/v3/YOUR_API_KEY_HERE')
       .then(function(FingerprintJS) { return FingerprintJS.load(); });
-
 
     window.fpPromise
       .then(function(fp) { return fp.get(); })
@@ -17,7 +15,6 @@
         var visitorId = result.visitorId;
         var requestId = result.requestId;
         console.log('visitorId:', visitorId, 'requestId:', requestId);
-
 
         Qualtrics.SurveyEngine.setEmbeddedData('visitorId', visitorId);
         Qualtrics.SurveyEngine.setEmbeddedData('requestId', requestId);
