@@ -1,9 +1,10 @@
 <script type="text/javascript">
 Qualtrics.SurveyEngine.addOnload(function () {
-    const startTime    = Date.now();
-    let page           = parseInt(Qualtrics.SurveyEngine.getEmbeddedData("page")) || 1;
-﻿
-    // Dummy interaction trackers
+    // Track start time and determine current page
+    const startTime = Date.now();
+    let page = parseInt(Qualtrics.SurveyEngine.getEmbeddedData("page")) || 1;
+
+    // Initialize interaction counters and flags
     let mouseMoved       = false;
     let mouseMoveCount   = 0;
     let clickCount       = 0;
@@ -14,33 +15,33 @@ Qualtrics.SurveyEngine.addOnload(function () {
     let windowBlurred    = false;
     let scrollEventCount = 0;
     let eventLog         = [];
-﻿
-    // Event listeners (minimal)
+
+    // Register event listeners to track basic user activity
     document.addEventListener("mousemove", () => {
         mouseMoveCount += 1;
         mouseMoved = true;
     });
-﻿
+
     document.addEventListener("scroll", () => {
         scrollEventCount += 1;
     }, { passive: true });
-﻿
+
     document.addEventListener("click", () => { clickCount += 1; });
-﻿
+
     document.addEventListener("keydown", () => {
         keyCount += 1;
     });
-﻿
+
     document.addEventListener("paste", () => {
         pasted = true;
         eventLog.push({ event: "PASTE", time: Date.now() });
     });
-﻿
+
     document.addEventListener("copy", () => {
         copied = true;
         eventLog.push({ event: "COPY", time: Date.now() });
     });
-﻿
+
     document.addEventListener("visibilitychange", () => {
         if (document.hidden) {
             tabHidden = true;
@@ -49,29 +50,32 @@ Qualtrics.SurveyEngine.addOnload(function () {
             eventLog.push({ event: "TAB_VISIBLE", time: Date.now() });
         }
     });
-﻿
+
     window.addEventListener("blur", () => {
         windowBlurred = true;
         eventLog.push({ event: "WINDOW_BLUR", time: Date.now() });
     });
-﻿
+
     window.addEventListener("focus", () => {
         eventLog.push({ event: "WINDOW_FOCUS", time: Date.now() });
     });
-﻿
-    // CHANGED: use addOnPageSubmit instead of addOnUnload
+
+    // Use addOnPageSubmit (more reliable than unload) to record data before leaving the page
     let submitted = false;
     Qualtrics.SurveyEngine.addOnPageSubmit(function(type) {
         if (submitted) return;
         submitted = true;
-﻿
-        const endTime    = Date.now();
+
+        // Calculate total time spent on page
+        const endTime = Date.now();
         const timeOnPage = Math.round((endTime - startTime) / 1000);
-﻿
+
+        // Identify visible question IDs on this page
         const questionIDs = Array.from(
             document.querySelectorAll('.QuestionOuter')
         ).map(el => el.id).filter(id => id.startsWith('QID'));
-﻿
+
+        // Prepare tracking object with page-specific data
         const trackingEntry = {
             page: page,
             question_ids: questionIDs,
@@ -89,13 +93,14 @@ Qualtrics.SurveyEngine.addOnload(function () {
             event_log: eventLog,
             ts: Date.now()
         };
-﻿
+
+        // Append new data to the existing tracking array in Embedded Data
         const prev = Qualtrics.SurveyEngine.getEmbeddedData("tracking_json");
         const list = prev ? JSON.parse(prev) : [];
         list.push(trackingEntry);
         Qualtrics.SurveyEngine.setEmbeddedData("tracking_json", JSON.stringify(list));
-﻿
-        // Update page counter based on navigation direction
+
+        // Update page counter depending on navigation direction
         if (type === "next") {
             Qualtrics.SurveyEngine.setEmbeddedData("page", page + 1);
         } else if (type === "prev") {
