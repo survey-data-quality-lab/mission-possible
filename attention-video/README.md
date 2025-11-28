@@ -2,9 +2,7 @@
 
 This directory contains the code we used to **generate the video attention question** described in the appendix.
 
-There are currently two variants:
-
-- [`generator-v1/`](generator-v1/): original version used in the paper.
-- [`generator-v2/`](generator-v2/): alternative version that generates the video slightly differently.
+- [`generator-v1/`](generator-v1/): Code can be used to generate new video checks similar to our original.
+- v1.gif is our original video check. It was transformed from Video to GIF using an online tool for easier implementation in Qualtrics. 
 
 Each subfolder has its own README and Python scripts.
