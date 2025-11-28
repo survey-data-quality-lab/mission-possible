@@ -7,7 +7,7 @@
 
 3. Update the placeholder `YOUR_API_KEY_HERE` in the code with your actual Fingerprint API key.
 
-4. Create embedded data fields named `page`, `visitorId`, `requestId`, and `fp_error` in the **Survey Flow** before the first survey block. Set page equal to `1`.
+4. Create embedded data fields named `page`, `visitorId`, `requestId`, and `fp_error` in the **Survey Flow** before the first survey block. Set page equal to `1`.
 
 ---
 
