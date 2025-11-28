@@ -6,7 +6,7 @@
 
 # Survey Link
 - Use the link to access the survey:
-`https://unikoelnwiso.eu.qualtrics.com/jfe/form/SV_08LUBgelzVqmdpQ?bot=gptO3&res=can&PROLIFIC_PID=556677&treat=simple`
+`Link`
 
 # Workflow
 For each page of the survey:
