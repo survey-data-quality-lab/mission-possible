@@ -1,7 +1,7 @@
 # Mission Possible: Data Quality in Online Surveys
 
 Welcome 👋  
-This repository accompanies the paper **“Mission Possible: Data Quality in Online Surveys”** and collects all materials needed to replicate or adapt our setup.
+This repository accompanies the paper **“Mission Possible: The Collection of High-Quality Data”** and collects all materials needed to replicate or adapt our setup.
 
 ## What’s inside
 
