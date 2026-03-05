@@ -13,6 +13,13 @@
 - Political Affiliation: Republican
 - Prolific ID: 556677
 
+## Skills
+- Moderate computer literacy; comfortable with email, basic web browsing, and online forms, but not highly tech-savvy
+- Strong reading comprehension and written communication from years of teaching
+- Familiar with online survey platforms from occasional professional development questionnaires
+- Limited familiarity with social media beyond Facebook
+- Accustomed to careful, methodical reading before responding
+
 # Survey Link
 - Use the link to access the survey: 
 `Link`
