@@ -1,4 +1,4 @@
-# Mission Possible: The Collection of High-Quality Data
+# Mission Possible: The Collection of High-Quality Online Data
 
 Welcome 👋  
 This repository accompanies the paper **“Mission Possible: The Collection of High-Quality Online Data”** and collects all materials needed to replicate or adapt our setup.
