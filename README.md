@@ -19,7 +19,7 @@ This repository accompanies the paper **“Mission Possible: The Collection of H
   Code to generate your own version of the video-based attention check, plus example outputs. See [`attention-video/`](attention-video/).
   
 - **Prompts**  
-  The **simple** and **complex** agent prompts used in the paper, plus sample agent video-behavior file. See [`prompts/`](prompts/).
+  The **simple** and **complex** agent prompts used in the paper. See [`prompts/`](prompts/).
 
 
 
