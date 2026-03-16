@@ -9,16 +9,13 @@ This repository accompanies the paper **“Mission Possible: The Collection of H
   The working paper (PDF). See [`paper/`](paper/).  
   > If GitHub can’t preview the PDF, click **Download** to view it locally.
 
-- **Data and analysis code**  
-  Scripts we used to clean and analyze the data, and example datasets when we can share them. See [`paper/data/`](paper/data/).
-
 - **Tracking scripts for Qualtrics**  
   JavaScript snippets used in the survey to track behavior, keystrokes, and digital fingerprint. See [`trackers/`](trackers/) and the individual subfolders.
 
 - **Qualtrics Survey File**  
-  Qualtrics survey including the tracking scripts. See [`qualtrics survey file/`](qualtrics survey file/).
+  Qualtrics survey including the tracking scripts. See [`qualtrics survey file/`](qualtrics%20survey%20file/).
 
-- **Video attention question**  
+- **Video attention check**  
   Code to generate your own version of the video-based attention check, plus example outputs. See [`attention-video/`](attention-video/).
   
 - **Prompts**  
