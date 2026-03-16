@@ -15,6 +15,9 @@ This repository accompanies the paper **“Mission Possible: The Collection of H
 - **Tracking scripts for Qualtrics**  
   JavaScript snippets used in the survey to track behavior, keystrokes, and digital fingerprint. See [`trackers/`](trackers/) and the individual subfolders.
 
+- **Qualtrics Survey File**  
+  Qualtrics survey including the tracking scripts. See [`qualtrics survey file/`](qualtrics survey file/).
+
 - **Video attention question**  
   Code to generate your own version of the video-based attention check, plus example outputs. See [`attention-video/`](attention-video/).
   
