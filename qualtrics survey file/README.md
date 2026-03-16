@@ -1,6 +1,8 @@
 # Qualtrics Survey
 
-This directory contains a Qualtrics survey file of our baseline survey which includes the three tracker codes of the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**. It should be ready-to-go; only device fingerprinting will require you to update with your API key.
+This directory contains a Qualtrics survey file of our baseline survey which includes the three tracker codes of the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**. 
+
+This survey file should be ready to use after uploading to Qualtrics; only device fingerprinting will require you to update it with your API key.
 
 The survey is set up for **Prolific** as it asks for the Prolific ID on page two, and records `PROLIFIC_PID`, `STUDY_ID`, and `SESSION_ID` as embedded data fields.
 
@@ -9,7 +11,7 @@ Tracking data is stored in embedded data fields:
 | Field | Description |
 |---|---|
 | `tracking_json` | Records data for the **General Tracker** running on all pages |
-| `key_log` | Records data from the **Key Log Tracker** in the open text question (Q16) |
+| `key_log` | Records keystroke data from the **Key Log Tracker** in the open text question (Q16) |
 | `key_log2` | Records keystroke data from the **Key Log Tracker** in the video check (Q34) |
 | `visitorId` / `requestId` | Stores data from device fingerprinting (optional) |
 
