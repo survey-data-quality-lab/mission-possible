@@ -1,4 +1,4 @@
-# Qualtrics Survey
+# Instructions for Qualtrics Survey File
 
 This directory contains a Qualtrics survey file of our baseline survey which includes the three tracker codes of the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**. 
 
@@ -13,7 +13,7 @@ Tracking data is stored in embedded data fields:
 | `tracking_json` | Records data for the **General Tracker** running on all pages |
 | `key_log` | Records keystroke data from the **Key Log Tracker** in the open text question (Q16) |
 | `key_log2` | Records keystroke data from the **Key Log Tracker** in the video check (Q34) |
-| `visitorId` / `requestId` | Stores data from device fingerprinting (optional) |
+| `visitorId` / `requestId` / `fp_error` | Stores data from device fingerprinting (optional) |
 
 These can be cleaned using the R code provided under `\trackers\R`.
 
@@ -34,7 +34,7 @@ Code for recording Prolific's Authenticity Check is not included, but can be add
 
 ## 2. Update the Device Fingerprinting API Key [OPTIONAL]
 
-The survey includes JavaScript in the header that performs device fingerprinting.
+The survey includes JavaScript in the survey header that performs device fingerprinting.
 You must replace the placeholder API key with your own fingerprint API key to use device fingerprinting.
 
 ### Steps
