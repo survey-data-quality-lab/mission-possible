@@ -2,12 +2,12 @@
 
 This directory contains Qualtrics survey files that can be imported into Qualtrics.  
 
-The .qsf files include our three tracker codes: the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**.
-
-1. Use [Mission_Possible_Survey_V1.qsf](./Mission_Possible_Survey_V1.qsf) for collecting your own data. It integrates by default with our new data cleaning code. It also has an updated general-purpose consent form.
+1. Use [Mission_Possible_Survey_V1.qsf](./Mission_Possible_Survey_V1.qsf) for collecting your own data. It integrates best with our new [code for data cleaning](https://github.com/survey-data-quality-lab/mission-possible-code/).
 2. Use [Mission_Possible_Baseline_Survey.qsf](./Mission_Possible_Baseline_Survey.qsf) to see an older version documenting the exact wording of the Baseline Survey in our paper.
 
-The survey is set up for **Prolific** as it asks for the Prolific ID on page two, and records `PROLIFIC_PID`, `STUDY_ID`, and `SESSION_ID` as embedded data fields.  
+The .qsf files include our three tracker codes: the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**.
+
+The survey is set up for **Prolific** as it asks for the Prolific ID on page two, and records `PROLIFIC_PID`, `STUDY_ID`, and `SESSION_ID` as embedded data fields. Code for recording Prolific's Authenticity Check is not included, but can be added following Prolific's latest instructions.
 
 Tracking data is stored in embedded data fields:
 
@@ -17,10 +17,6 @@ Tracking data is stored in embedded data fields:
 | `key_log` | Records keystroke data from the **Key Log Tracker** in the open text question (Q16) |
 | `key_log2` | Records keystroke data from the **Key Log Tracker** in the video check (Q34) |
 | `visitorId` / `requestId` / `fp_error` | Stores data from device fingerprinting (optional) |
-
-These can be cleaned using the R code provided under `\trackers\R`.
-
-Code for recording Prolific's Authenticity Check is not included, but can be added following Prolific's latest instructions.
 
 ---
 
@@ -64,6 +60,6 @@ You must replace the placeholder API key with your own fingerprint API key to us
 
 ---
 
-## 4. Run the Study [OPTIONAL]
+## 5. Run the Study [OPTIONAL]
 
 
