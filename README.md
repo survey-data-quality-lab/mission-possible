@@ -20,7 +20,7 @@ To track and compare data quality across online survey platforms over time, we a
 
 - **Data Quality Hub for Online Surveys** - Researchers can submit their study results — the dashboard updates as new studies are added.
 
-## What’s inside?
+## What’s Inside?
 
 - **Paper**  
   The working paper (PDF). See [`paper/`](paper/).  
