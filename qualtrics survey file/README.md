@@ -1,10 +1,13 @@
 # Instructions for Qualtrics Survey File
 
-This directory contains a Qualtrics survey file of our baseline survey which includes the three tracker codes of the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**. 
+This directory contains Qualtrics survey files that can be imported into Qualtrics.  
 
-This survey file should be ready to use after uploading to Qualtrics; only device fingerprinting will require you to update it with your API key.
+The .qsf files include our three tracker codes: the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**. 
 
-The survey is set up for **Prolific** as it asks for the Prolific ID on page two, and records `PROLIFIC_PID`, `STUDY_ID`, and `SESSION_ID` as embedded data fields.
+1. Use Mission_Possible_Survey_V1.qsf for collecting your own data. It integrates by default with our new data cleaning code. It also has an updated general-purpose consent form. 
+2. Use Mission_Possible_Baseline_Survey.qsf to see an older version documenting the exact wording of the Baseline Survey in our paper. 
+
+The survey is set up for **Prolific** as it asks for the Prolific ID on page two, and records `PROLIFIC_PID`, `STUDY_ID`, and `SESSION_ID` as embedded data fields.  
 
 Tracking data is stored in embedded data fields:
 
@@ -32,7 +35,21 @@ Code for recording Prolific's Authenticity Check is not included, but can be add
 
 ---
 
-## 2. Update the Device Fingerprinting API Key [OPTIONAL]
+## 2. Update the Integration with the Survey Platform
+
+1. Set the redirect link in the survey flow.
+2. When not running on Prolific, update the embedded data fields to record participant ids and adapt the question for recording the participant id in the survey.
+
+---
+
+## 3. Update Survey Details [OPTIONAL]
+
+1. Adapt payment details (set in the survey flow).
+2. Adapt the consent form.
+
+---
+
+## 4. Update the Device Fingerprinting API Key [OPTIONAL]
 
 The survey includes JavaScript in the survey header that performs device fingerprinting.
 You must replace the placeholder API key with your own fingerprint API key to use device fingerprinting.
@@ -44,5 +61,9 @@ You must replace the placeholder API key with your own fingerprint API key to us
 3. Click **Source** (left of "Less...") to open the HTML editor.
 4. Locate the placeholder text `"YOUR_API_KEY_HERE"` and update it with your API key obtained from Fingerprint.com.
 5. **Save**, **Apply**, and **Publish**.
+
+---
+
+## 4. Run the Study [OPTIONAL]
 
 
