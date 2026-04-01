@@ -2,10 +2,10 @@
 
 This directory contains Qualtrics survey files that can be imported into Qualtrics.  
 
-The .qsf files include our three tracker codes: the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**. 
+The .qsf files include our three tracker codes: the **General Tracker**, **Key Log Tracker**, and **Device Fingerprinting**.
 
-1. Use Mission_Possible_Survey_V1.qsf for collecting your own data. It integrates by default with our new data cleaning code. It also has an updated general-purpose consent form. 
-2. Use Mission_Possible_Baseline_Survey.qsf to see an older version documenting the exact wording of the Baseline Survey in our paper. 
+1. Use [Mission_Possible_Survey_V1.qsf](./Mission_Possible_Survey_V1.qsf) for collecting your own data. It integrates by default with our new data cleaning code. It also has an updated general-purpose consent form.
+2. Use [Mission_Possible_Baseline_Survey.qsf](./Mission_Possible_Baseline_Survey.qsf) to see an older version documenting the exact wording of the Baseline Survey in our paper.
 
 The survey is set up for **Prolific** as it asks for the Prolific ID on page two, and records `PROLIFIC_PID`, `STUDY_ID`, and `SESSION_ID` as embedded data fields.  
 
@@ -44,7 +44,7 @@ Code for recording Prolific's Authenticity Check is not included, but can be add
 
 ## 3. Update Survey Details
 
-1. Adapt payment details (set in the survey flow).
+1. Adapt payment details (set `showup' in the survey flow).
 2. Adapt the consent form.
 
 ---
