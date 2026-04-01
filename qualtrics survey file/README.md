@@ -42,7 +42,7 @@ Code for recording Prolific's Authenticity Check is not included, but can be add
 
 ---
 
-## 3. Update Survey Details [OPTIONAL]
+## 3. Update Survey Details
 
 1. Adapt payment details (set in the survey flow).
 2. Adapt the consent form.
