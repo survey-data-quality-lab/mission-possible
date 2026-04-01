@@ -1,4 +1,4 @@
-# Trackers
+# R Script for Cleaning Tracker Data
 
 NOTE: We provide an updated set of cleaning code with more functionalities in the [mission-possible-code](https://github.com/survey-data-quality-lab/mission-possible-code/) Github respository. 
 
