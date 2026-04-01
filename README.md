@@ -9,7 +9,7 @@ This repository accompanies the paper **“Mission Possible: The Collection of H
 To run your own screening survey with minimal effort, we now provide new cleaning code (R and STATA) and a new Qualtrics survey file:
 
 - **NEW Cleaning Code (01/04/2026)** 
-See [mission-possible-code respository](https://github.com/survey-data-quality-lab/mission-possible-code/)
+See the [mission-possible-code](https://github.com/survey-data-quality-lab/mission-possible-code/) Github respository.
 
 - **NEW Qualtrics Survey File (01/04/2026)** 
 See [Mission_Possible_Survey_V1.qsf](qualtrics%20survey%20file/)
