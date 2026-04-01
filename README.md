@@ -14,12 +14,6 @@ See [this Github respository](https://github.com/survey-data-quality-lab/mission
 - **NEW Qualtrics Survey File (01/04/2026)** 
 See [Mission_Possible_Survey_V1.qsf](qualtrics%20survey%20file/)
 
-## What's Coming? 
-
-To track and compare data quality across online survey platforms over time, we are currently working on a 
-
-- **Data Quality Hub for Online Surveys** - Researchers can submit their study results — the dashboard updates as new studies are added.
-
 ## What’s Inside?
 
 - **Paper**  
@@ -38,7 +32,11 @@ To track and compare data quality across online survey platforms over time, we a
 - **Prompts**  
   The **simple** and **complex** agent prompts used in the paper. See [`prompts/`](prompts/).
 
+## What's Coming? 
 
+To track and compare data quality across online survey platforms over time, we are currently working on a 
+
+- **Data Quality Hub for Online Surveys** - Researchers can submit their study results — the dashboard updates as new studies are added.
 
 ## Using this repository
 
