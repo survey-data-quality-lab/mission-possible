@@ -12,7 +12,7 @@ To run your own screening survey with minimal effort, we now provide new cleanin
 See [this Github respository](https://github.com/survey-data-quality-lab/mission-possible-code/)
 
 - **NEW Qualtrics Survey File (01/04/2026)** 
-See [Mission_Possible_Survey_V1.qsf](qualtrics%20survey%20file//Mission_Possible_Survey_V1.qsf)
+See [Mission_Possible_Survey_V1.qsf](qualtrics%20survey%20file/)
 
 ## What's Coming? 
 
