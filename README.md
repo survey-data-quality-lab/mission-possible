@@ -27,7 +27,7 @@ To track and compare data quality across online survey platforms over time, we a
   > If GitHub can’t preview the PDF, click **Download** to view it locally.
 
 - **Tracking scripts for Qualtrics**  
-  JavaScript code used in the survey to track behavior, keystrokes, and digital fingerprint. See [`trackers/`](trackers/) and the individual subfolders.
+  JavaScript code used in the survey to track behavior, keystrokes, and digital fingerprint. See [`trackers/`](trackers/) .
 
 - **Qualtrics Survey Files**  
   Qualtrics survey with the tracking scripts. See [`qualtrics survey file/`](qualtrics%20survey%20file/).
