@@ -60,6 +60,6 @@ You must replace the placeholder API key with your own fingerprint API key to us
 
 ---
 
-## 5. Run the Study
+## 5. Run the Study 🚀
 
 
